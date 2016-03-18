@@ -20,6 +20,7 @@ import hxy.ttt.com.acdseeview.R;
 
 /**
  * Created by Admin on 2016/3/17.
+ * 本例子图片加载使用xUtils框架，可自由实现
  */
 public class ACDSeeActivity extends Activity implements ViewPager.OnPageChangeListener{
 
