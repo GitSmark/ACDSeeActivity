@@ -25,6 +25,13 @@ Usage
 
 2. Use the `ACDSeeActivity`.
   
+ ```java
+  String[] url = new String[]{"", "", ""};
+  ACDSeeActivity.start(MainActivity.this, url);
+  //ACDSeeActivity.start(MainActivity.this, url, 2, false);
+  ```
+Same as
+
   ```java
   String[] url = new String[]{"", "", ""};
   Intent intent = new Intent(MainActivity.this, ACDSeeActivity.class);
