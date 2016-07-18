@@ -36,6 +36,20 @@ public class ACDSeeActivity extends Activity implements ViewPager.OnPageChangeLi
     private List<String> datas = new ArrayList<>();
     private Boolean showDot = true;
     private int selectedItem = 0;
+    
+    public static void start(Activity context, String[] url){
+        Intent intent = new Intent(context, ACDSeeActivity.class);
+        intent.putExtra(ACDSeeData, url);
+        context.startActivity(intent);
+    }
+    
+    public static void start(Activity context, String[] url, int position, boolean show){
+        Intent intent = new Intent(context, ACDSeeActivity.class);
+        intent.putExtra(ACDSeeData, url);
+        intent.putExtra(ACDSeeItem, position);
+        intent.putExtra(ACDSeeAdot, show);
+        context.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
